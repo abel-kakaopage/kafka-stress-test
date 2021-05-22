@@ -2,6 +2,7 @@
 KAFKA=bootstrap.servers=b-2.perf-test-m5-larg.vbxnpm.c2.kafka.ap-northeast-2.amazonaws.com:9092,b-1.perf-test-m5-larg.vbxnpm.c2.kafka.ap-northeast-2.amazonaws.com:9092,b-3.perf-test-m5-larg.vbxnpm.c2.kafka.ap-northeast-2.amazonaws.com:9092,b-4.perf-test-m5-larg.vbxnpm.c2.kafka.ap-northeast-2.amazonaws.com:9092
 ZOOKEEPER=z-2.perf-test-m5-larg.vbxnpm.c2.kafka.ap-northeast-2.amazonaws.com:2181,z-1.perf-test-m5-larg.vbxnpm.c2.kafka.ap-northeast-2.amazonaws.com:2181,z-3.perf-test-m5-larg.vbxnpm.c2.kafka.ap-northeast-2.amazonaws.com:2181
 PAYLOAD=payload.txt
+INSTANCE=m5.large
 INDEX=$(seq 1 1)
 for i in $INDEX
 do
