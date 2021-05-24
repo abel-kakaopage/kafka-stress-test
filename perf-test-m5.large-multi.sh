@@ -1,6 +1,6 @@
 #!/bin/sh
-KAFKA=bootstrap.servers=b-1.perf-test-m5-larg.53fxw0.c2.kafka.ap-northeast-2.amazonaws.com:9092,b-2.perf-test-m5-larg.53fxw0.c2.kafka.ap-northeast-2.amazonaws.com:9092
-ZOOKEEPER=z-1.perf-test-m5-larg.53fxw0.c2.kafka.ap-northeast-2.amazonaws.com:2181,z-3.perf-test-m5-larg.53fxw0.c2.kafka.ap-northeast-2.amazonaws.com:2181,z-2.perf-test-m5-larg.53fxw0.c2.kafka.ap-northeast-2.amazonaws.com:2181
+KAFKA=bootstrap.servers=b-2.perf-test-m5-larg.wwiqv1.c2.kafka.ap-northeast-2.amazonaws.com:9092,b-1.perf-test-m5-larg.wwiqv1.c2.kafka.ap-northeast-2.amazonaws.com:9092,b-4.perf-test-m5-larg.wwiqv1.c2.kafka.ap-northeast-2.amazonaws.com:9092,b-3.perf-test-m5-larg.wwiqv1.c2.kafka.ap-northeast-2.amazonaws.com:9092
+ZOOKEEPER=z-3.perf-test-m5-larg.wwiqv1.c2.kafka.ap-northeast-2.amazonaws.com:2181,z-1.perf-test-m5-larg.wwiqv1.c2.kafka.ap-northeast-2.amazonaws.com:2181,z-2.perf-test-m5-larg.wwiqv1.c2.kafka.ap-northeast-2.amazonaws.com:2181
 INSTANCE=m5.large
 PAYLOAD=payload.txt
 INDEX=$(seq 1 1)
