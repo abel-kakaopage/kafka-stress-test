@@ -15,10 +15,10 @@ do
     /home/ec2-user/kafka_2.12-2.2.1/bin/kafka-topics.sh --delete --zookeeper $ZOOKEEPER --topic performance-lz4-test
     /home/ec2-user/kafka_2.12-2.2.1/bin/kafka-topics.sh --delete --zookeeper $ZOOKEEPER --topic performance-snappy-test
     echo 'Create Partition'
-    /home/ec2-user/kafka_2.12-2.2.1/bin/kafka-topics.sh --create --zookeeper $ZOOKEEPER --replication-factor 2 --partitions 2 --topic performance-test
-    /home/ec2-user/kafka_2.12-2.2.1/bin/kafka-topics.sh --create --zookeeper $ZOOKEEPER --replication-factor 2 --partitions 2 --config compression.type=gzip --topic performance-gzip-test
-    /home/ec2-user/kafka_2.12-2.2.1/bin/kafka-topics.sh --create --zookeeper $ZOOKEEPER --replication-factor 2 --partitions 2 --config compression.type=lz4 --topic performance-lz4-test
-    /home/ec2-user/kafka_2.12-2.2.1/bin/kafka-topics.sh --create --zookeeper $ZOOKEEPER --replication-factor 2 --partitions 2 --config compression.type=snappy --topic performance-snappy-test
+    /home/ec2-user/kafka_2.12-2.2.1/bin/kafka-topics.sh --create --zookeeper $ZOOKEEPER --replication-factor 2 --partitions 4 --topic performance-test
+    /home/ec2-user/kafka_2.12-2.2.1/bin/kafka-topics.sh --create --zookeeper $ZOOKEEPER --replication-factor 2 --partitions 4 --config compression.type=gzip --topic performance-gzip-test
+    /home/ec2-user/kafka_2.12-2.2.1/bin/kafka-topics.sh --create --zookeeper $ZOOKEEPER --replication-factor 2 --partitions 4 --config compression.type=lz4 --topic performance-lz4-test
+    /home/ec2-user/kafka_2.12-2.2.1/bin/kafka-topics.sh --create --zookeeper $ZOOKEEPER --replication-factor 2 --partitions 4 --config compression.type=snappy --topic performance-snappy-test
 
     echo ${INSTANCE}-1
     /home/ec2-user/kafka_2.12-2.2.1/bin/kafka-producer-perf-test.sh --num-records 1000000 --throughput -1 --payload-file $PAYLOAD --topic performance-test --print-metrics --producer-props $KAFKA > kafka.${INSTANCE}.${PARTITION}_1.txt
