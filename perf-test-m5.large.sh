@@ -1,6 +1,6 @@
 #!/bin/sh
-KAFKA=bootstrap.servers=b-1.abel-perf-test-m5.l6oxes.c2.kafka.ap-northeast-2.amazonaws.com:9092,b-2.abel-perf-test-m5.l6oxes.c2.kafka.ap-northeast-2.amazonaws.com:9092
-ZOOKEEPER=z-3.abel-perf-test-m5.l6oxes.c2.kafka.ap-northeast-2.amazonaws.com:2181,z-2.abel-perf-test-m5.l6oxes.c2.kafka.ap-northeast-2.amazonaws.com:2181,z-1.abel-perf-test-m5.l6oxes.c2.kafka.ap-northeast-2.amazonaws.com:2181
+KAFKA=bootstrap.servers=b-1.abel-perf-test.3ls28a.c2.kafka.ap-northeast-2.amazonaws.com:9092,b-2.abel-perf-test.3ls28a.c2.kafka.ap-northeast-2.amazonaws.com:9092
+ZOOKEEPER=z-1.abel-perf-test.3ls28a.c2.kafka.ap-northeast-2.amazonaws.com:2181,z-3.abel-perf-test.3ls28a.c2.kafka.ap-northeast-2.amazonaws.com:2181,z-2.abel-perf-test.3ls28a.c2.kafka.ap-northeast-2.amazonaws.com:2181
 INSTANCE=m5.large
 INDEX=$(seq 1 4)
 for i in $INDEX
