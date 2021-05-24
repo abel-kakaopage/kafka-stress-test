@@ -1,5 +1,5 @@
 #!/bin/sh
-ZOOKEEPER=z-2.perf-test-m5-larg.7fagaf.c2.kafka.ap-northeast-2.amazonaws.com:2181,z-1.perf-test-m5-larg.7fagaf.c2.kafka.ap-northeast-2.amazonaws.com:2181,z-3.perf-test-m5-larg.7fagaf.c2.kafka.ap-northeast-2.amazonaws.com:2181
+ZOOKEEPER=z-2.perf-test-m5-xlar.nptpyk.c2.kafka.ap-northeast-2.amazonaws.com:2181,z-1.perf-test-m5-xlar.nptpyk.c2.kafka.ap-northeast-2.amazonaws.com:2181,z-3.perf-test-m5-xlar.nptpyk.c2.kafka.ap-northeast-2.amazonaws.com:2181
 echo 'Delete Partition'
 /home/ec2-user/kafka_2.12-2.2.1/bin/kafka-topics.sh --delete --zookeeper $ZOOKEEPER --topic performance-test
 /home/ec2-user/kafka_2.12-2.2.1/bin/kafka-topics.sh --delete --zookeeper $ZOOKEEPER --topic performance-gzip-test
